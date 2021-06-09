@@ -1,6 +1,8 @@
 # Software-Defined-Radio-Receiver
 Software Defined Radio (SDR) receiver created in partial fulfillments of ENGR 357 "Engineering Electronics II" at Walla Walla University.
 
+![](https://github.com/pricna/Software-Defined-Radio-Receiver/blob/main/Images/Jared_Built_Board.png)
+
 **Introduction:** This SDR receiver was designed to be simple and low cost, operate in the 10 MHz to 16 MHz frequency range, and also meet specific design criteria specified below. We ([Nate Price](https://github.com/pricna) and [Jared Evans](https://github.com/jred-KiCAD)), designed, assembled, and tested the SDR receiver to be used with a free open source SDR software, called Quisk. More information on the design, issues, testing, and software aspects of this project can be found on the [wiki page](https://github.com/pricna/Software-Defined-Radio-Receiver/wiki).
 
 **Navigation:** 
