@@ -11,6 +11,7 @@ Software Defined Radio (SDR) receiver created in partial fulfillments of ENGR 35
 - The PCB Files folder contains some versions of our PCB, separated from the rest of the schematic files
 - The Project Files folder contains our Bill of Materials and project files for v1.1
 - The Schematic files folder contains pdfs of all of our schematic revisions, as well as project files for each of them
+- The latest schematic can be found [here](https://github.com/pricna/Software-Defined-Radio-Receiver/tree/main/Schematic%20files/Project%20Files/v2.0/ENGR357_Project)
 
 **Credits:** Much of this work builds on work described in [A Comparison of Affordable, Self-Assembled Software-Defined Radio Receivers Using Quadrature Sampling Down-Conversion](http://fweb.wallawalla.edu/~frohro/ClassHandouts/Electronics/A%20Comparison%20of%20Affordable,%20Self-Assembled%20%20Software-Defined%20Radio%20Receivers%20Using%20Quadrature%20Sampling%20Down-Conversion.pdf) by the authors [Caleb Froelich](https://github.com/froeca), [Konrad McClure](https://github.com/KonradMcClure), [Joshua Silver](https://github.com/JoshSilver8), [Jordyn Watkins](https://github.com/greenjacketgirl), and our professor, [Dr. Rob Frohne](https://github.com/frohro).
 
