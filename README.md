@@ -19,6 +19,11 @@ Software Defined Radio (SDR) receiver created in partial fulfillments of ENGR 35
 
 
 ## Further Information
+
+(The information below is also covered in the [wiki page](https://github.com/pricna/Software-Defined-Radio-Receiver/wiki) (in sections). The wiki page also has some extra pages with information not in this document with milestones and generally useful information.
+
+## 1. Hardware Design
+
 ## Block Diagram 
 ![](https://github.com/pricna/Software-Defined-Radio-Receiver/blob/main/Images/SDR_Block_Diagram.png) 
 
@@ -61,6 +66,9 @@ A voltage converter was added because with the different voltages needed for the
 ![](https://github.com/pricna/Software-Defined-Radio-Receiver/blob/main/Images/Schematic%20Sections/Schematic_Lowpass_Filter.png)
 
 Just like the bandpass filter, the lowpass filter was designed with assistance from online tools. This is one of the parts of our schematic that changed the most from the original design to the end result, but we ultimately decided on using a Sallen-Key Lowpass Filter that was calculated for a cutoff frequency of 100 kHz using [this online tool](http://sim.okawa-denshi.jp/en/OPseikiLowkeisan.htm). We also decided on using the LM4565 op amps for this (and the voltage smoother) because they were cheap and according to the datasheet, had a lower noise density than some of the other op amps we looked at.
+
+## 2. Testing and Errors
+
 ## Basic Tests Done
 The boards were constructed following our bring-up plan and Bill of Materials.
 
@@ -101,6 +109,9 @@ As can be seen in the pictures above, pull-up resistors were incorrectly used.
 
 As can be seen, an incorrect adjustment to the resistors in the Adafruit voltage converter was made. This was one of the bigger issues for how our PCB turned out.
 
+## 3. Software
+(and simulations)
+
 ## Simulations
 
 We simulated our work using LTspice. Much of this work is based on the work previously done by Dr. Frohne and the other groups, but these simulations can be found [here](https://github.com/pricna/Software-Defined-Radio-Receiver/tree/main/LTspice%20Simulation%20Files) in the repository. Jared primarily focused on getting the simulations going. The following is an LTspice screenshot of a noise simulation that seemed to get decent results. The instrumentation amplifiers used are not the ones we used because of difficulties in finding the proper ones, and we did not fully integrate everything all of our circuitry into all of our simulations.
@@ -126,6 +137,8 @@ To set up Quisk, follow the installation steps detailed on [this page](https://j
 ![](https://github.com/pricna/Software-Defined-Radio-Receiver/blob/main/Images/Quisk_Results.png)
 
 Also note that with the version of the software we were using, we incorrectly got error messages when there were no errors when we launched Quisk. Some of the Quisk setup steps were glossed over a little bit, so for more information on that either look at the installation instruction link above, or check [Konrad McClure's documentation](https://github.com/KonradMcClure/SDR_Receiver) for some additional useful information.
+
+## 4. Results
 
 ## Nate's board results
 The software was changed to set the I2C address to 0x62 as per the data sheet for our Si5351. After connecting the logic analyzer, and learning that there was no acknowledgement, and trying to make additional corrections, it became clear that there was some other issue in the board.
