@@ -140,7 +140,7 @@ Also note that with the version of the software we were using, we incorrectly go
 
 ## 4. Results
 
-## Nate's board results
+## Nate's results
 The software was changed to set the I2C address to 0x62 as per the data sheet for our Si5351. After connecting the logic analyzer, and learning that there was no acknowledgement, and trying to make additional corrections, it became clear that there was some other issue in the board.
 
 ![](https://github.com/pricna/Software-Defined-Radio-Receiver/blob/main/Images/Logic_Analyzer_nak.png)
@@ -154,7 +154,7 @@ Either way requires a lot of time desoldering and then soldering again​. Ultim
 
 ![](https://github.com/pricna/Software-Defined-Radio-Receiver/blob/main/Images/Nate_Built_Board.jpg)
 
-## Jared's board results
+## Jared's results
 
 We used the logic analyzer to confirm that on this board, the Si5351 communicates with Arduino. We used an oscilloscope to confirm that we could set the phases using [Arduino code](https://github.com/etherkit/Si5351Arduino/tree/master/examples/si5351_phase). On the signal generator we hooked up to the board, we found the sensitivity to be less than 0.1uV. Also, with Quisk set up, we found the image rejection to be approximately 3 dB. Though the most important result, is that we were able to tune Quisk to pick up a signal with the antenna connected. 
 
